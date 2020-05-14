@@ -1,1 +1,127 @@
-modif 
+TP ALGO
+EXO1
+Résolution
+var : a,b,qe=entier
+qe,r=réel
+Début
+afficher (entier a,b)
+saisir a,b
+qr?- a/b
+qr?-a div b
+r?- a mod b
+(“afficher entier “a,b)
+(“afficher le “quotient entier)
+(“afficher le “quotient réel)
+(“afficher le “reste)
+
+EXO: 02
+Ecrire un programme qui demande à l’utilisateur de donner le rayon d’un cercle et lui retourne sa surface et son périmètre.
+PI =  4 * arc tangente de 1. la fonction arc tangente est atan ex : atan(2).
+Déclaration des variables :
+Var : c,s,p=réel
+Début
+Ecrire (donner le rayon d’un cercle)
+saisir(r)
+s?3,14*(r)
+p? 2*3,14*(r)
+Fin
+
+EXO :03
+Version 1
+Déclaration des variables
+reels : R1,R2,R3
+debut
+afficher (“résistances des series”)
+saisir (r1,r2,r3)
+afficher la resistance en serie (r1,r2,r3)
+afiicher (resistances des parallele)
+saisir (R1 * R2 * R3) / (R1*R2 + R2*R3 + R1*R3)
+afficher resistances des parallele ((R1 * R2 * R3) / (R1*R2) +( R2*R3) +(R1*R3)
+fin
+Version 2
+declaration des variable
+reel:r1,r2,r3,choix
+Début algo
+Afficher le choix(“entrer le choix)
+si choix=1 alors
+saisir(R1,R2,R3)
+si choix=1 
+alors saisir(: (R1 * R2 * R3) / (R1*R2 + R2*R3 + R1*R3)
+Finsi
+(“afficher” la fréquence en série)
+(“afficher”la frequence en parralelle)
+
+EXO :04 Écrire un programme qui saisit un réel x et un entier n et affiche x à la puissance n.
+Version 1 : utiliser la fonction pow  du fichier d’en-tête <math.h>  ex : pow(x,n)
+Version 2 : en utilisant un boucle
+Version 2:
+var : x,p=réel
+       n,i=entier
+Résolution
+afficher(“entrer les valeurs x,n)
+Lire (x,n)
+ p? i
+Pour i? n à 1 faire
+afficher(”saisir une valeur”)
+Lire p?- p*x
+finPour
+“affiche (x” a la puissance” n)
+
+
+EXO:05
+Ecrire un programme qui saisit 5 variables de type entier au clavier et qui affiche leur somme. Utiliser une boucle (for ou while ou do..while).
+Déclaration des variables
+var somme : 5
+val : entier
+somme?0
+début Algo
+pour i?- 1 à 5 faire
+       Afficher “saisir une valeur”
+lire val
+somme?-+val
+finPour
+afficher somme
+
+EXO :06
+Les coordonnées A et B
+Var : x1,y1,x2,y2 ,C= réel
+Debut
+Afficher (les coordonnées A )
+Saisir  (x1, y2)
+Afficher (les coordonnées B )
+Saisir (x2,y2)
+C<-- sqrt :sqr(x1-x2)+(y1-y2)
+
+EXO:07
+ Décomposition d’un montant en euros Écrire un algorithme permettant de décomposer un montant entré au clavier en billets de 20, 10, 5 euros et pièces de 2, 1 euros, de façon à minimiser le nombre de billets et de pièces.
+Var montant ; rest=reel
+Debut
+Afficher (entrer montant)
+  Saisir(“montant”)
+tant que (“montant >= 1 faire
+si (“montant >20) alors
+afficher(20)//”montant?- montant- 20
+si (montant >10 alors
+afficher (10)
+si montant >5 alors
+afficher (5)
+si montant >2 alors
+afficher (2)
+si montant > 1 alors
+afficher (1)
+Fin
+EXO 08
+ : Ecrire un algorithme permettant de résoudre une équation du second degré.
+Ax2 + bx + c = 0
+Variable a,b,c=reel
+debut
+ecrire(entrer les coeeficients)
+lire(a,b,c)
+si a=0 alors
+si b=0 alors
+si c=0 alors
+Ecriture (aucune solution)
+Si a>
+finsi
+
+
