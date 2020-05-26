@@ -122,6 +122,163 @@ si b=0 alors
 si c=0 alors
 Ecriture (aucune solution)
 Si a>
+Finsi
+EXO:09
+Ecrire un algorithme qui donne la durée de vol en heure minute connaissant l'heure de départ et l'heure d'arrivée.
+a. On considère que le départ et l'arrivé ont lieu le même jour
+b. On suppose que la durée de vol est inférieure à 24 heures mais peut avoir lieu le lendemain.
+Var= h1,h2,hr,m1,m2,mr
+Debut
+Afficher (“entrer les valeurs départs et arrivées”)
+Saisir (h1,h2,m1;m2)
+hr?(h1-h2)
+mr ?-(m1-m2)
+Ecrire(hr,mr)
+sinon (h1-h2-1) (m1+60-m2)
+afficher (hr,mr)
+Fin
+
+EXO: 10 : Ecrire un algorithme qui lit trois valeurs entières ( A, B et C) et qui permet de les trier par échanges successifs Et enfin les afficher dans l'ordre 4.
+algo: trisuccessif 
+Var : A,B,C: entier
+Début :
+Afficher (A,B,C)
+Si a>b alors
+(A,B)
+Si b>c alors
+(B,C)
+si a>b alors
+(A,B)
+Finsi
+EXO 12 :
+Algo nombre parfait
+var : nbre;i;somm:entier
+Début
+Répéter
+ecrire (ecrire un nombre)
+lire (nombre)
+jusqu’à (nbre),
+somm=0
+pour i=1 jusqu’ à nbre -1 faire
+si (nbre %=0) nbre
+somme =somm +i
 finsi
+finPour
+si nombre(nbre=som) alors
+afficher” le chiffre le nombre est un nombre parfait
+EXO 13
+declaration des var
+var j,m,a= entier
+afficher(date)
+saisir j,m,a
+Tant que jour >31 faire
+si jour < 1 ou >  31 alors
+afficher jour
+Tant que mois > 12 faire
+si mois < 1 ou >12 alors
+afficher mois
+Tant que année <1990 et >2020 
+si anne <1990 et >2020 alors
+afficher anné
+Fintantque
+“afficher” année est valide
+sinon
+“afficher” année n’est pas valide
+
+EXO 14
+Programme année bissextile
+déclaration des var
+var j,m,a =entier
+Tant que jour >31 faire
+si jour < 1 ou >  31 alors
+afficher jour
+Tant que mois > 12 faire
+si mois < 1 ou >12 alors
+afficher mois
+Tant que année <1990 et >2020 faire
+si anne <1990 et >2020 alors
+afficher année
+Fintantque
+Tant que année <1990 et >2020 alors
+afficher année
+si (année/4=0) et (annee/400=0) ou (année/100=0) alors
+afficher année est bissextile
+sinon
+ année n’est pas bisexxtile 
+Fin
+EX015 :
+Var: somme,i=entier
+moyenn=reel
+debut
+somme?-0
+Pour i?- 1 a 	10 faire
+afficher(saisir la valeur)
+lire val
+somme?-somme +val
+FinPour
+“afficher” la somme
+moyenne?-somme /val
+FinPour
+“afficher” moyenne
+EXO16
+Var=a,b,s=entier
+(i,quotient)
+afficher(entrer les valeurs)
+saisir (a,b)
+quotient?-0
+s? a-b
+quotient?quotient+
+EXO 17: Faire un programme qui calcule le PGCD de deux nombres saisis au clavier en utilisant l'astuce suivante: soustrait le plus petit des deux entiers du plus grand jusqu'à ce qu'ils soient égaux
+A :413
+B : 295
+ALGO PGCD:
+Déclaration des variables
+debut
+Repeter
+Ecrire (“entrer la valeur de a,b)
+lire(a,b)
+jusqu’à (a>0) ;(b>0)
+si a >b alors
+a?-a-b
+sinon
+b?- b-a
+finsi
+EXO18: Faire un programme qui calcule et affiche le PPCM de deux entiers saisis au clavier.
+Algo PPCM
+var = a,b,c,d =entiers
+Debut 
+afficher(les entiers a,b)
+lire (a,b)
+c=a
+d=b
+tant que a 
+EXO 19 :Ecrire l’algorithme qui affiche la somme des prix d'une suite d'articles en CFA (entiers) saisies par l'utilisateur et se terminant par zéro.
+Algo articles
+var=somm,prix=entier
+Debut
+s=0
+afficher(le prix d’une article)
+lire(p)
+repeter 
+s?- p+s
+affixher(le prix des articles)
+jusqu’à 
+p=0
+ecrire(‘’afficher la somme des activités est’’ ; s)
+EXO21 :Ecrire un algorithme qui demande successivement 10 nombres à l'utilisateur, et qui affiche à la fin le plus grand de ces 10 nombres Et affiche aussi son rang dans la liste saisie l'entier est plus grand ou plus petit que sa proposition. Un score est affiché lorsque l'entier est trouvé.
+Algo devinette
+var=a deviner;N=entier
+Debut
+repeter
+Ecrire(‘’Entrer un nombre’’)
+lire(n)
+a deviner=8
+Si n <a deviner alors;
+afficher plus petit
+Sinon n  > a deviner
+afficher plus grand
+jusqu’à N= a deviner
+afficher ‘’c’est ‘’gagner
+
 
 
